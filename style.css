@@ -3,20 +3,40 @@
 	src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
 }
 
-.navigation > ul {
-	color: grey;
-	font-size: 20px;
-	font-family: "Raleway", sans-serif;
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+nav.navigation {
+    display: flex;
+}
+nav.navigation h1 {
+    position: relative;
+    max-width: 30%;
+    width: 100%;
 }
 
-.navigation > ul > li {
+.navigation .menu{
+	max-width: 70%;
+    width: 100%;
+}
+.navigation ul {
+    color: grey;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    list-style-type: none;
+}
+
+.navigation ul li {
 	list-style-type: none;
 	display: inline-block;
 	padding: 5px 20px;
 	position: relative;
 }
-
-.navigation > ul > li:hover {
+.menu ul {
+    float: right;
+}
+.navigation ul li:hover {
 	color: black;
 }
 
@@ -55,4 +75,29 @@ a {
 
 h1 {
 	font-family: "Raleway", sans-serif;
+}
+
+.lajmet1 {
+    display: flex;
+}
+
+.artikulli1 {
+    max-width: 70%;
+    width: 100%;
+    padding: 0 20px;
+    background: red;
+}
+.artikujt2 {
+    max-width: 30%;
+    width: 100%;
+    padding: 0 20px;
+    background: red;
+}
+.more-articles {
+    display: flex;
+}
+.more-lajmet {
+    max-width: 33.3333%;
+    width: 100%;
+    padding: 0 20px;
 }
