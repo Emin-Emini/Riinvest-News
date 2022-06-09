@@ -1,19 +1,322 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Riinvest News</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<style>
+		@font-face {
+			font-family: Raleway-Black;
+			src: url(./fonts/Raleway/static/Raleway-Black.ttf);
+		}
+
+		.header {
+			background-image: url("./img/header.jpg");
+			background-size: cover;
+			padding: 150px 50px;
+		}
+
+		.header h1 {
+			font-family: Raleway-Black;
+			font-size: 48px;
+			line-height: 1.3;
+			color: white;
+			text-align: center;
+		}
+
+		.header p {
+			font-family: "Raleway";
+			font-size: 18px;
+			line-height: 1.5;
+			color: white;
+			text-align: center;
+		}
+
+		.section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 60px 0;
+		}
+
+		.section h2 {
+			font-family: Raleway-Black;
+			font-size: 36px;
+			color: #0F172A;
+			text-align: center;
+			margin: 10px;
+		}
+
+		.section p {
+			font-family: Raleway;
+			font-size: 24px;
+			color: #334155;
+			text-align: center;
+		}
+
+		.gallery-images {
+			margin-top: 60px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.gallery-images .middle {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.gallery-images img {
+			border-radius: 10px;
+			width: 100%;
+			margin: 10px 0;
+			height: 350px;
+			object-fit: cover;
+		}
+
+		.gallery-images .middle img {
+			width: 100%;
+			height: 350px;
+		}
+
+		.team-members {
+			margin-top: 60px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+		}
+
+		.member {
+			width: 100%;
+			background-color: #F1F5F9;
+			border-radius: 10px;
+			margin: 10px 0;
+		}
+
+		.member img {
+			aspect-ratio: 1;
+			border-radius: 8px;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.member-content {
+			padding: 60px;
+		}
+
+		.member p {
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 400;
+			text-align: left;
+			color: #334155;
+			letter-spacing: 4px;
+			margin-top: 30px;
+			margin-bottom: 0;
+
+		}
+
+		.member h3 {
+			font-family: Raleway-Black;
+			font-size: 32px;
+			margin: 5px 0;
+			color: #0F172A;
+
+		}
+
+		.member .icons {
+			margin-top: 32px;
+		}
+
+		.member .icons i {
+			font-size: 32px;
+			color: #2563EB;
+			margin-right: 8px;
+		}
+
+
+		@media (min-width: 960px) {
+
+			.header {
+				padding: 150px 200px;
+			}
+
+			.header h1 {
+				font-size: 64px;
+			}
+
+			.header p {
+				font-size: 24px;
+			}
+
+			.section {
+				padding: 100px 0;
+			}
+
+			.section h2 {
+
+				font-size: 48px;
+
+			}
+
+			.section p {
+				font-size: 24px;
+			}
+
+			.gallery-images {
+				flex-direction: row;
+			}
+
+			.gallery-images .middle {
+				margin: 0 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.gallery-images img {
+				width: 33%;
+				height: 700px;
+			}
+
+			.gallery-images .middle img {
+				height: 340px;
+			}
+
+			.team-members {
+				margin-top: 60px;
+				flex-direction: row;
+			}
+
+			.member {
+				width: 32%;
+			}
+
+			.member-content {
+				padding: 50px;
+			}
+
+			.member p {
+				font-size: 12px;
+				margin-top: 30px;
+			}
+
+			.member h3 {
+				font-size: 24px;
+				margin: 5px 0;
+			}
+
+			.member .icons {
+				margin-top: 24px;
+			}
+
+			.member .icons i {
+				font-size: 24px;
+			}
+		}
+
+
+		@media (min-width: 1466px) {
+			.header {
+				padding: 150px 460px;
+			}
+
+			.header h1 {
+				font-size: 72px;
+			}
+
+			.header p {
+				font-size: 28px;
+			}
+
+			.section {
+				padding: 100px 0;
+			}
+
+			.section h2 {
+
+				font-size: 48px;
+
+			}
+
+			.section p {
+				font-size: 24px;
+			}
+
+			.gallery-images {
+				flex-direction: row;
+			}
+
+			.gallery-images .middle {
+				margin: 0 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.gallery-images img {
+				width: 33%;
+				height: 800px;
+			}
+
+			.gallery-images .middle img {
+				height: 390px;
+			}
+
+			.team-members {
+				margin-top: 60px;
+				flex-direction: row;
+			}
+
+			.member {
+				width: 32%;
+			}
+
+			.member-content {
+				padding: 80px;
+			}
+
+			.member p {
+				font-size: 16px;
+				margin-top: 30px;
+			}
+
+			.member h3 {
+				font-size: 32px;
+				margin: 5px 0;
+			}
+
+			.member .icons {
+				margin-top: 32px;
+			}
+
+			.member .icons i {
+				font-size: 32px;
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<div>
 		<nav class="navigation">
-			<h1 style="float:left; padding-left: 100px; padding-right: 100px;">Riinvest <span style="color: #2563EB">News</span></h1>
-			<ul style="float:left;">
+			<div class="title">
+				<h1>Riinvest <span style="color: #2563EB">News</span></h1>
+				<span class="button" onclick="openNav(this)"><i class="fa-solid fa-bars"></i></span>
+			</div>
+			<ul id="links">
 				<li><a href="index.html">Ballina</a></li>
 				<li><a href="lajmet.html"><span class="arrow">&#9660;</span>
-					Lajmet</a>
+						Lajmet</a>
 					<ul class="sub-navigation">
 						<li>Teknologji</li>
 						<li>Shkence</li>
@@ -23,7 +326,119 @@
 				<li class="active-nav"><a href="about-us.html">Rreth Nesh</a></li>
 				<li><a href="contact.html">Kontakti</a></li>
 			</ul>
+
 		</nav>
+
+		<section class="header">
+			<h1>Lorem ipsum is placeholder text</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua.</p>
+		</section>
+
+		<div class="container">
+			<section class="gallery section">
+				<h2>Gallery</h2>
+				<p>Excepteur sint occaecat cupidatat non proident.</p>
+				<div class="gallery-images">
+					<img
+						src="https://images.unsplash.com/photo-1614213671535-a82e778bc06a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+					<div class="middle">
+						<img
+							src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						<img
+							src="https://images.unsplash.com/photo-1539683255143-73a6b838b106?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1970&q=80" />
+
+					</div>
+					<img
+						src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" />
+
+				</div>
+			</section>
+
+			<section class="team section">
+				<h2>Team</h2>
+				<p>Our team of professional developers!</p>
+				<div class="team-members">
+					<div class="member">
+						<div class="member-content">
+							<img
+								src="https://images.unsplash.com/photo-1593376853899-fbb47a057fa0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" />
+							<p>Lead developer</p>
+							<h3>Filan Fisteku</h3>
+							<div class="icons">
+								<a href="#">
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-linkedin-in"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-content">
+							<img
+								src="https://images.unsplash.com/photo-1589254066213-a0c9dc853511?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+							<p>Lead developer</p>
+							<h3>Filan Fisteku</h3>
+							<div class="icons">
+								<a href="#">
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-linkedin-in"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="member">
+						<div class="member-content">
+							<img
+								src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+							<p>Lead developer</p>
+							<h3>Filan Fisteku</h3>
+							<div class="icons">
+								<a href="#">
+									<i class="fa-brands fa-github"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-linkedin-in"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</section>
+
+		</div>
 	</div>
+
+	<script>
+		function openNav(button) {
+			var links = document.getElementById("links");
+			if (links.classList.contains('show')) {
+				links.classList.remove("show");
+				button.classList.remove("active");
+			} else {
+				links.classList.add("show");
+				button.classList.add("active");
+			}
+		}
+	</script>
 </body>
+
 </html>
