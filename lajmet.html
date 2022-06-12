@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Riinvest News</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 	<div class="wrapper">
@@ -96,6 +99,17 @@
 	<script type="text/javascript">
 		function showDiv() {
    			document.getElementById('lajmetMore').style.display = "block";
+		}
+
+		function openNav(button) {
+			var links = document.getElementById("links");
+			if (links.classList.contains('show')) {
+				links.classList.remove("show");
+				button.classList.remove("active");
+			} else {
+				links.classList.add("show");
+				button.classList.add("active");
+			}
 		}
 	</script>
 </body>
