@@ -291,6 +291,86 @@ h1 {
 	
 	
 }
+
+.home-about-us {
+	display: flex;
+	margin: 158px 0;
+	flex-direction: column;
+}
+
+.home-about-us h2 {
+	font-family: Raleway-Black;
+	font-size: 36px;
+	color: #0F172A;
+	margin-bottom: 0;
+}
+
+.home-about-us p {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: #334155;
+	margin-bottom: 30px;
+}
+
+.home-about-us a {
+	font-family: "Raleway";
+	display: inline-block;
+	font-weight: 500;
+	font-size: 16px;
+	color: #fff;
+	background-color: #2563EB;
+	padding: 15px 30px;
+	border-radius: 10px;
+}
+
+.home-about-us img {
+	width: 100%;
+}
+
+@media (min-width: 960px) {
+	.home-about-us{
+		margin: 144px 0;
+		flex-direction: row;
+	}
+	
+	.home-about-us-left{
+		flex: 1;
+		padding-right: 72px;
+	}
+	
+	.home-about-us-right {
+		flex: 1;
+	}
+	
+	.home-about-us h2 {
+		font-size: 48px;
+		margin-bottom: 0;
+	}
+	
+	.home-about-us p {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+	
+	.home-about-us a {
+		font-size: 18px;
+	}
+
+}
+
+
+@media (min-width: 1466px) {
+	.home-about-us{
+		margin: 184px 0;
+	}
+	
+	.home-about-us-left{
+		padding-right: 128px;
+	}
+	
+	
+}
+
 .lajmi-wrapper {
     border-radius: 20px;
     overflow: hidden;
