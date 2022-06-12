@@ -13,8 +13,8 @@
 				<h1>Riinvest <span style="color: #2563EB">News</span></h1>
 				<div class="menu">
 					<ul>
-						<li class="active-nav"><a href="index.html">Ballina</a></li>
-						<li><a href="lajmet.html"><span class="arrow">&#9660;</span>
+						<li><a href="index.html">Ballina</a></li>
+						<li class="active-nav"><a href="lajmet.html"><span class="arrow">&#9660;</span>
 							Lajmet</a>
 							<ul class="sub-navigation">
 								<li>Teknologji</li>
@@ -32,32 +32,71 @@
 		<div class="body">
 			<div class="lajmet1">
 				<div class="artikulli1 artikujt">
-					<img src="" alt="lajmi1">
+					<div class="lajmi-wrapper">
+						<img src="img/img4.jpg" alt="lajmi1">
+						<a href="/"><div class="lajmi-caption">
+							<h2>Lorem ipsum dolor sit amet</h2>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+						</div></a>
+					</div>
 				</div>
 				<div class="artikujt2 artikujt">
 					<div class="element1">
-						<img src="" alt="lajmi2">
+						<div class="lajmi-wrapper">
+							<img src="img/img2.jpg" alt="lajmi2">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Lorem ipsum dolor sit amet</h5>
+							</div></a>
+						</div>
 					</div>
 					<div class="element2">
-						<img src="" alt="lajmi3">
+						<div class="lajmi-wrapper">
+							<img src="img/img1.jpg" alt="lajmi3">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Lorem ipsum dolor sit amet</h5>
+							</div></a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="view-more">
-				<button>view more</button>
+			<div class="view-more" id="lajmetMore">
 				<div class="more-articles artikujt">
 					<div class="more-lajmet">
-						<img src="" alt="lajmi3">
+						<div class="lajmi-wrapper">
+							<img src="img/img5.jpg" alt="lajmi4">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Lorem ipsum dolor sit amet</h5>
+							</div></a>
+						</div>
 					</div>
 					<div class="more-lajmet">
-						<img src="" alt="lajmi3">
+						<div class="lajmi-wrapper">
+							<img src="img/img2.jpg" alt="lajmi5">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Lorem ipsum dolor sit amet</h5>
+							</div></a>
+						</div>
 					</div>
 					<div class="more-lajmet">
-						<img src="" alt="lajmi3">
+						<div class="lajmi-wrapper">
+							<img src="img/img4.jpg" alt="lajmi6">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Lorem ipsum dolor sit amet</h5>
+							</div></a>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="more">
+				<input type="button" name="answer" value="Show More" onclick="showDiv()" class="btn-more"/>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		function showDiv() {
+   			document.getElementById('lajmetMore').style.display = "block";
+		}
+	</script>
 </body>
 </html>
