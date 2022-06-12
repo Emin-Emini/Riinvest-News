@@ -312,6 +312,10 @@ h1 {
 	margin-bottom: 30px;
 }
 
+img {
+	object-fit: fill;
+}
+
 .home-about-us a {
 	font-family: "Raleway";
 	display: inline-block;
