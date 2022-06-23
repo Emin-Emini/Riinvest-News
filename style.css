@@ -802,7 +802,7 @@ display: none;
 	justify-content: center;
 }
 
-.footer p {
+.footer small {
 	font-family: 'Raleway';
 	color: #070809;
 }
