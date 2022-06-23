@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Riinvest News - Tech</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="navigation">
+			<div class="title">
+				<h1>Riinvest <span style="color: #2563EB">News</span></h1>
+				<span class="button" onclick="openNav(this)"><i class="fa-solid fa-bars"></i></span>
+			</div>
+			<ul id="links">
+				<li><a href="index.html">Ballina</a></li>
+				<li class="active-nav"><a href="lajmet.html"><span class="arrow">&#9660;</span>
+						Lajmet</a>
+					<ul class="sub-navigation">
+						<li><a href="lajmet-tech.html">Teknologji</a></li>
+						<li><a href="lajmet-science.html">Shkencë</a></li>
+						<li><a href="lajmet-business.html">Biznes</a></li>
+					</ul>
+				</li>
+				<li><a href="about-us.html">Rreth Nesh</a></li>
+				<li><a href="contact.html">Kontakti</a></li>
+			</ul>
+
+		</nav>
+
+		<div class="body">
+			<div class="lajmet1">
+				<div class="artikulli1 artikujt">
+					<div class="lajmi-wrapper">
+						<img src="img/tech-img1.jpg" alt="lajmi1">
+						<a href="/"><div class="lajmi-caption">
+							<h2>Apple launces new M2 chip in WWDC22</h2>
+							<p>M2-Based MacBook Air Announced in 6th June.</p>
+						</div></a>
+					</div>
+				</div>
+				<div class="artikujt2 artikujt">
+					<div class="element1">
+						<div class="lajmi-wrapper">
+							<img src="img/tech-img2.jpg" alt="lajmi2">
+							<a href="/"><div class="lajmi-caption">
+								<h5>TikTok is gearing up to invest a lot in VR</h5>
+							</div></a>
+						</div>
+					</div>
+					<div class="element2">
+						<div class="lajmi-wrapper">
+							<img src="img/tech-img3.jpg" alt="lajmi3">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Sonos Roam is still on sale for a $37 off</h5>
+							</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="view-more" id="lajmetMore">
+				<div class="more-articles artikujt">
+					<div class="more-lajmet">
+						<div class="lajmi-wrapper">
+							<img src="img/tech-img4.jpg" alt="lajmi4">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Telegram premium is coming this year</h5>
+							</div></a>
+						</div>
+					</div>
+					<div class="more-lajmet">
+						<div class="lajmi-wrapper">
+							<img src="img/tech-img5.jpg" alt="lajmi5">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Best noice cancellation headphones</h5>
+							</div></a>
+						</div>
+					</div>
+					<div class="more-lajmet">
+						<div class="lajmi-wrapper">
+							<img src="img/tech-img6.jpg" alt="lajmi6">
+							<a href="/"><div class="lajmi-caption">
+								<h5>Significant changes coming on Apple Watch</h5>
+							</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<input type="button" name="answer" value="Show More" onclick="showDiv()" class="btn-more"/>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function showDiv() {
+   			document.getElementById('lajmetMore').style.display = "block";
+		}
+
+		function openNav(button) {
+			var links = document.getElementById("links");
+			if (links.classList.contains('show')) {
+				links.classList.remove("show");
+				button.classList.remove("active");
+			} else {
+				links.classList.add("show");
+				button.classList.add("active");
+			}
+		}
+	</script>
+</body>
+</html>
