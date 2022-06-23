@@ -1,30 +1,280 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Riinvest News</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<style>
+		@font-face {
+			font-family: Raleway-Black;
+			src: url(./fonts/Raleway/static/Raleway-Black.ttf);
+		}
+
+		.bg-contact {
+			position: absolute;
+			z-index: -1;
+			display: flex;
+			top: 120px;
+			justify-content: center;
+			width: 100%;
+			opacity: 1;
+
+			overflow-x: hidden
+		}
+
+		.bg-contact img {
+			width: 840px;
+		}
+
+		.contact-header {
+			display: flex;
+			align-items: center;
+			padding-top: 200px;
+			padding-bottom: 150px;
+			flex-direction: column;
+		}
+
+		.contact-header h1 {
+			font-family: Raleway-Black;
+			font-size: 42px;
+			color: #0F172A;
+		}
+
+		.icons {
+			margin-top: 32px;
+			margin-top: 0;
+		}
+
+		.icons i {
+			font-size: 32px;
+			color: #2563EB;
+			margin-right: 8px;
+
+		}
+
+
+		.contact-form {
+			padding: 80px 0;
+		}
+
+		.contact-form label {
+			font-family: "Raleway";
+			font-weight: 400;
+			font-size: 18px;
+			margin-top: 20px;
+			color: #0F172A;
+		}
+
+		.contact-form input {
+			font-family: "Raleway";
+			font-weight: 500;
+			font-size: 20px;
+			padding: 16px 24px;
+			border-radius: 10px;
+			border: 0;
+			color: #0F172A;
+			margin-top: 10px;
+			background-color: #F1F5F9;
+			outline: none;
+		}
+
+		.contact-form textarea {
+			font-family: "Raleway";
+			font-weight: 500;
+			font-size: 20px;
+			padding: 16px 24px;
+			border-radius: 10px;
+			border: 0;
+			color: #0F172A;
+			margin-top: 10px;
+			background-color: #F1F5F9;
+			outline: none;
+		}
+
+		.contact-top {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.contact-input {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.contact-bottom {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+
+		.btn-more {
+			background: #2563eb;
+			border: 0;
+			padding: 17px 55px;
+			font-weight: 600;
+			font-size: 18px;
+			color: white;
+			margin-bottom: 50px;
+			border-radius: 25px;
+			box-shadow: 0px 4px 11px -3px #5f8df1;
+			cursor: pointer;
+		}
+		.more {
+			text-align: center;
+			margin-top: 48px;
+		}
+
+
+
+
+		@media (min-width: 960px) {
+
+			.bg-contact {
+				top: 0px;
+			}
+
+			.bg-contact img {
+				width: 1220px;
+			}
+
+			.contact-header h1 {
+				font-size: 56px;
+			}
+
+			.contact-form {
+				padding: 80px 0;
+			}
+
+
+			.contact-input {
+
+				width: 48%;
+			}
+
+			.contact-top {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.contact-bottom {
+				display: flex;
+				flex-direction: column;
+			}
+
+		}
+
+
+		@media (min-width: 1466px) {
+
+			.bg-contact {
+				top: -100px;
+			}
+
+
+			.bg-contact img {
+				width: 1440px;
+			}
+
+		}
+	</style>
 </head>
+
 <body>
 	<div>
 		<nav class="navigation">
-			<h1 style="float:left; padding-left: 100px; padding-right: 100px;">Riinvest <span style="color: #2563EB">News</span></h1>
-			<ul style="float:left;">
+			<div class="title">
+				<h1>Riinvest <span style="color: #2563EB">News</span></h1>
+				<span class="button" onclick="openNav(this)"><i class="fa-solid fa-bars"></i></span>
+			</div>
+			<ul id="links">
 				<li><a href="index.html">Ballina</a></li>
 				<li><a href="lajmet.html"><span class="arrow">&#9660;</span>
-					Lajmet</a>
+						Lajmet</a>
 					<ul class="sub-navigation">
-						<li>Teknologji</li>
-						<li>Shkence</li>
-						<li>Sport</li>
+						<li><a href="lajmet-tech.html">Teknologji</a></li>
+						<li><a href="lajmet-science.html">Shkencë</a></li>
+						<li><a href="lajmet-business.html">Biznes</a></li>
 					</ul>
 				</li>
 				<li><a href="about-us.html">Rreth Nesh</a></li>
 				<li class="active-nav"><a href="contact.html">Kontakti</a></li>
 			</ul>
+
 		</nav>
+
+		<div class="bg-contact">
+			<img src="img/phone.png" />
+		</div>
+		<div class="container">
+			<section class="contact-header">
+				<h1>Contact Us</h1>
+
+				<div class="icons">
+					<a href="#">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+				</div>
+			</section>
+			<section>
+				<form class="contact-form">
+					<div class="contact-top">
+						<div class="contact-input">
+							<label>Name:</label>
+							<input placeholder="Name..." type="text" />
+						</div>
+						<div class="contact-input">
+							<label>Email:</label>
+							<input placeholder="Email..." type="text" />
+						</div>
+
+					</div>
+					<div class="contact-bottom">
+						<label>Message:</label>
+						<textarea placeholder="Message..."></textarea>
+					</div>
+
+					<div class="more">
+						<button name="answer" class="btn-more" > Send Message</button>
+					</div>
+				</form>
+			</section>
+		</div>
+
+
 	</div>
-	
+
+	<footer class="footer container">
+		<small>© 2022 Copyright, <b>Made with 💙 in 🇽🇰</b></small>
+	</footer>
+
+	<script>
+		function openNav(button) {
+			var links = document.getElementById("links");
+			if (links.classList.contains('show')) {
+				links.classList.remove("show");
+				button.classList.remove("active");
+			} else {
+				links.classList.add("show");
+				button.classList.add("active");
+			}
+		}
+	</script>
 </body>
+
 </html>
